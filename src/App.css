@@ -1,38 +1,112 @@
-.App {
-  text-align: center;
+*{
+    margin: 0;
+    padding: 0;
+}
+.App{
+    background-color: rgba(0, 0, 0, 0.932);
+    height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button{
+    outline-style: none;
+    border: none;
+}
+.nav{
+    background-color: rgba(0, 0, 0, 0.904);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px 0 20px ;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.one{
+    display: flex;
+    color: white;
+}
+.two input{
+    width: 528px;
+    background-color: gray;
+    color: white;
+    height: 25px;
+    outline-style: none;
+    border: none;
+    border-radius: 10px;
+}
+.two input::placeholder{
+    color: rgba(255, 255, 255, 0.571);
+    padding: 3px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.two button{
+    width: 88px;
+    height: 25px;
+    margin-left: 5px;
+    background-color: black;
+    color: rgba(255, 255, 255, 0.571);
+    outline-style: none;
+    border: none;
+    border-radius: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.two button:hover{
+    background-color: rgba(229, 218, 218, 0.16);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.three{
+    display: flex;
+    justify-content: space-between;
+    width: 170px;
+}
+
+.main{
+    margin: 50px 30px 30px 30px;
+    color: white;
+}
+.cont{
+    display: flex;
+    justify-content: space-between;
+}
+.cover{
+    display: flex;
+    height: 251px;
+    width: 380px;
+}
+.cover img{
+    width: 240px;
+    height: 230px;
+    transform: rotate(-6deg);
+}
+.text{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #71C5F461;
+    flex-direction: column;
+}
+
+.text button{
+    width: 90px;
+    color: white;
+    background-color: #71C5F461;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container div{
+    margin-left: 30px;
+}
+
+.container div img{
+    height: 160px;
+    width: 135px;
+}
+
+.container button{
+    width: 50px;
+    font-size: 12px;
+    background-color: black;
+    color: white;
 }
